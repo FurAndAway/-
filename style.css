@@ -1,0 +1,145 @@
+/* RESET / BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: #4c7ea9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  opacity: 0.7;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 60vh;
+  background: url('https://via.placeholder.com/1200x600?text=Pet+Hotel+Hero+Image') 
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  background: #4c7ea9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #2f6688;
+}
+
+/* REVIEWS SECTION */
+.reviews-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+.reviews-section h2 {
+  margin-bottom: 1rem;
+}
+.reviews-container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+/* ABOUT / BOOKING / CONTACT SECTIONS */
+.about-section,
+.booking-section,
+.contact-section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+}
+.about-section p,
+.booking-section p,
+.contact-section p {
+  margin-bottom: 1rem;
+}
+.booking-form,
+.contact-details {
+  margin-top: 1rem;
+}
+.booking-form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.booking-form button {
+  background: #4c7ea9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.booking-form button:hover {
+  background: #2f6688;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4c7ea9;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer p {
+  color: #fff;
+  font-size: 0.9rem;
+}
