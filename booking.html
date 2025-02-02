@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking - Fur & Away Glasgow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Fur & Away Glasgow</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <h1>Book a Stay or Service</h1>
+      <form action="#" method="POST" class="booking-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="petName">Pet's Name</label>
+        <input type="text" id="petName" name="petName" required />
+
+        <label for="service">Service Needed</label>
+        <select id="service" name="service">
+          <option value="petHotel">Pet Hotel / Boarding</option>
+          <option value="dogWalking">Dog Walking</option>
+          <option value="dogDaycare">Doggy Daycare</option>
+          <option value="boutique">Boutique Services</option>
+        </select>
+
+        <label for="date">Preferred Date(s)</label>
+        <input type="date" id="date" name="date" />
+
+        <button type="submit">Submit Booking Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fur & Away Glasgow</p>
+  </footer>
+
+</body>
+</html>
