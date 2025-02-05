@@ -45,20 +45,23 @@ body {
   opacity: 0.7;
 }
 
-/* HERO SECTION */
-.hero {
+/* HERO BANNER */
+.hero-banner {
   height: 60vh;
-  background: url('https://via.placeholder.com/1200x600?text=Pet+Hotel+Hero+Image')
-    center/cover no-repeat;
+  /* Replace 'hero-banner.jpg' with your actual banner image in the images/ folder */
+  background: url('images/hero-banner.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero-content {
   background: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   text-align: center;
+  max-width: 600px;
+  border-radius: 8px;
 }
 
 .hero-content h1 {
@@ -107,6 +110,13 @@ body {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
 }
 
 .service-item h3 {
@@ -172,6 +182,45 @@ body {
   margin-bottom: 1rem;
 }
 
+/* TEAM / ABOUT US LAYOUT */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  background-color: #fefefe;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.team-member figure {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.team-member figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.team-member p {
+  line-height: 1.4;
+}
+
 /* FORMS */
 .booking-form,
 .contact-details {
@@ -205,6 +254,47 @@ body {
   background: #2f6688;
 }
 
+/* GALLERY PAGE */
+.gallery-section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.gallery-section h1 {
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid figure {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 /* FOOTER */
 footer {
   background-color: #4c7ea9;
@@ -218,17 +308,26 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
+/* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+  .hero-banner {
+    height: 50vh;
   }
 
-  .hero {
-    height: 50vh;
+  .services-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr; 
   }
 }
