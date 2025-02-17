@@ -190,25 +190,47 @@ body {
   margin-top: 1.5rem;
 }
 
-.team-member {
-  background-color: #fefefe;
-  border-radius: 8px;
-  padding: 1rem;
-  max-width: 300px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  flex: 1;
-}
-
+/* 
+   OPTION A: Fixed width & height for figure,
+   with object-fit: cover on the img 
+*/
 .team-member figure {
-  text-align: center;
+  width: 250px;       /* Or any width you prefer */
+  height: 300px;      /* Adjust height to maintain ratio you like */
+  position: relative;
+  overflow: hidden;
   margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 8px; /* Keep corners consistent with your design */
 }
 
-.team-member img {
-  max-width: 100%;
-  height: auto;
+.team-member figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Crops the image to fill the container */
+  display: block;
   border-radius: 4px;
 }
+
+/* 
+   OPTION B: Using aspect-ratio (modern browsers) 
+   (Uncomment & tweak if you prefer aspect-ratio approach instead)
+   .team-member figure {
+     aspect-ratio: 3/4;
+     width: 250px;
+     overflow: hidden;
+     margin-bottom: 1rem;
+     text-align: center;
+     border-radius: 8px;
+     position: relative;
+   }
+   .team-member figure img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+   }
+*/
 
 .team-member figcaption {
   font-style: italic;
@@ -219,6 +241,7 @@ body {
 
 .team-member p {
   line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 /* FORMS */
