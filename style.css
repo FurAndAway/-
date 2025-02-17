@@ -197,7 +197,6 @@ body {
 .team-member figure {
   width: 350px;       /* Or any width you prefer */
   height: 420px;      /* Adjust height to maintain ratio you like */
-  position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
   text-align: center;
@@ -208,6 +207,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;  /* Crops the image to fill the container */
+  object-position: top;
   display: block;
   border-radius: 4px;
 }
