@@ -195,8 +195,8 @@ body {
    with object-fit: cover on the img 
 */
 .team-member figure {
-  width: 250px;       /* Or any width you prefer */
-  height: 300px;      /* Adjust height to maintain ratio you like */
+  width: 300px;       /* Or any width you prefer */
+  height: 360px;      /* Adjust height to maintain ratio you like */
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
